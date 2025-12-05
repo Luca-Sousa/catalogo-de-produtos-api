@@ -35,10 +35,9 @@ catalogo-de-produtos-api/
 │   │   └── produtoService.js  # Lógica de negócio
 │   └── server.js              # Servidor Express
 ├── database.sql               # Script de criação do banco
-├── .env.example              # Exemplo de variáveis de ambiente
 └── package.json
 ```
-### 3. Iniciar o servidor
+### Iniciar o servidor
 
 **Modo desenvolvimento (com nodemon):**
 ```bash
