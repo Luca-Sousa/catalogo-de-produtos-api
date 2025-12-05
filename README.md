@@ -157,4 +157,6 @@ Este projeto foi desenvolvido para fins educacionais.
 
 ## 👤 Autor
 
-Desenvolvido como projeto acadêmico de Desenvolvimento WEB.
+GitHub: [Luca-Sousa](https://github.com/Luca-Sousa)
+
+Projeto realizado durante a disciplina de Desenvolvimento WEB no 7º semestre de 2025.2 do Bacharelado em Ciência da Computação do IFCE Campus Tianguá.
