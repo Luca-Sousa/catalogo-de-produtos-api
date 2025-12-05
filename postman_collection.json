@@ -1,0 +1,139 @@
+{
+  "info": {
+    "name": "Catálogo de Produtos API",
+    "description": "Coleção de testes para a API de Catálogo de Produtos.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar todos os produtos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/produtos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos"]
+        }
+      }
+    },
+    {
+      "name": "Filtrar por categoria",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/produtos?categoria=Eletrônicos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos"],
+          "query": [
+            {"key": "categoria", "value": "Eletrônicos"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ordenar por preço crescente",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/produtos?ordenar=preco_asc",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos"],
+          "query": [
+            {"key": "ordenar", "value": "preco_asc"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "Buscar produto por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/produtos/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos", "1"]
+        }
+      }
+    },
+    {
+      "name": "Criar novo produto",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Produto Teste\",\n  \"preco\": 99.90,\n  \"descricao\": \"Descrição do produto\",\n  \"categoria\": \"Eletrônicos\",\n  \"estoque\": 10\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/produtos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos"]
+        }
+      }
+    },
+    {
+      "name": "Atualizar produto",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Produto Atualizado\",\n  \"preco\": 149.90,\n  \"descricao\": \"Nova descrição\",\n  \"categoria\": \"Eletrônicos\",\n  \"estoque\": 20\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/produtos/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos", "1"]
+        }
+      }
+    },
+    {
+      "name": "Deletar produto",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/produtos/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos", "1"]
+        }
+      }
+    },
+    {
+      "name": "Listar categorias",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/produtos/categorias",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos", "categorias"]
+        }
+      }
+    }
+  ]
+}
